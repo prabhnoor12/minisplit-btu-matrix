@@ -1,0 +1,1220 @@
+[
+  {
+    "slug": "18k-2-zone-mini-split-9k-9k",
+    "title": "18,000 BTU 2-Zone Mini Split (9k + 9k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "18k BTU 2-Zone (9k+9k)",
+    "condenserBtu": 18000,
+    "zones": 2,
+    "heads": [
+      9000,
+      9000
+    ],
+    "totalHeadBtu": 18000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 818,
+    "useCase": "2 Bedrooms or Small ADU (Up to 800 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "20A Double-Pole",
+    "wire": "12 AWG Copper (12/2 + G)",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "18k-2-zone-mini-split-6k-12k",
+    "title": "18,000 BTU 2-Zone Mini Split (6k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "18k BTU 2-Zone (6k+12k)",
+    "condenserBtu": 18000,
+    "zones": 2,
+    "heads": [
+      6000,
+      12000
+    ],
+    "totalHeadBtu": 18000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 818,
+    "useCase": "1 Bedroom + Living Room Studio (Up to 850 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "20A Double-Pole",
+    "wire": "12 AWG Copper (12/2 + G)",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "18k-2-zone-mini-split-9k-12k",
+    "title": "18,000 BTU 2-Zone Mini Split (9k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "18k BTU 2-Zone (9k+12k)",
+    "condenserBtu": 18000,
+    "zones": 2,
+    "heads": [
+      9000,
+      12000
+    ],
+    "totalHeadBtu": 21000,
+    "diversityRatioPct": 117,
+    "maxCoverageSqFt": 818,
+    "useCase": "Slightly Over-Connected 2-Zone ADU (116% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "20A Double-Pole",
+    "wire": "12 AWG Copper (12/2 + G)",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "24k-2-zone-mini-split-9k-9k",
+    "title": "24,000 BTU 2-Zone Mini Split (9k + 9k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "24k BTU 2-Zone (9k+9k)",
+    "condenserBtu": 24000,
+    "zones": 2,
+    "heads": [
+      9000,
+      9000
+    ],
+    "totalHeadBtu": 18000,
+    "diversityRatioPct": 75,
+    "maxCoverageSqFt": 1091,
+    "useCase": "Cold-Climate 2-Zone Reserve Capacity (Up to 900 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "25A–30A Double-Pole",
+    "wire": "10 AWG Copper (10/2 + G)",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "24k-2-zone-mini-split-9k-12k",
+    "title": "24,000 BTU 2-Zone Mini Split (9k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "24k BTU 2-Zone (9k+12k)",
+    "condenserBtu": 24000,
+    "zones": 2,
+    "heads": [
+      9000,
+      12000
+    ],
+    "totalHeadBtu": 21000,
+    "diversityRatioPct": 88,
+    "maxCoverageSqFt": 1091,
+    "useCase": "Master Suite + Living Room (Up to 1,050 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "25A–30A Double-Pole",
+    "wire": "10 AWG Copper (10/2 + G)",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "24k-2-zone-mini-split-12k-12k",
+    "title": "24,000 BTU 2-Zone Mini Split (12k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "24k BTU 2-Zone (12k+12k)",
+    "condenserBtu": 24000,
+    "zones": 2,
+    "heads": [
+      12000,
+      12000
+    ],
+    "totalHeadBtu": 24000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1091,
+    "useCase": "Balanced 2-Zone Garage + Bonus Room (Up to 1,150 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "25A–30A Double-Pole",
+    "wire": "10 AWG Copper (10/2 + G)",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "24k-2-zone-mini-split-9k-15k",
+    "title": "24,000 BTU 2-Zone Mini Split (9k + 15k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "24k BTU 2-Zone (9k+15k)",
+    "condenserBtu": 24000,
+    "zones": 2,
+    "heads": [
+      9000,
+      15000
+    ],
+    "totalHeadBtu": 24000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1091,
+    "useCase": "Bedroom + Open Kitchen/Living (Up to 1,150 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "25A–30A Double-Pole",
+    "wire": "10 AWG Copper (10/2 + G)",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "24k-2-zone-mini-split-9k-18k",
+    "title": "24,000 BTU 2-Zone Mini Split (9k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "24k BTU 2-Zone (9k+18k)",
+    "condenserBtu": 24000,
+    "zones": 2,
+    "heads": [
+      9000,
+      18000
+    ],
+    "totalHeadBtu": 27000,
+    "diversityRatioPct": 113,
+    "maxCoverageSqFt": 1091,
+    "useCase": "Large Great Room + Bedroom (112% Diversity Ratio)",
+    "voltage": "208/230V",
+    "breaker": "25A–30A Double-Pole",
+    "wire": "10 AWG Copper (10/2 + G)",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "24k-2-zone-mini-split-12k-15k",
+    "title": "24,000 BTU 2-Zone Mini Split (12k + 15k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "24k BTU 2-Zone (12k+15k)",
+    "condenserBtu": 24000,
+    "zones": 2,
+    "heads": [
+      12000,
+      15000
+    ],
+    "totalHeadBtu": 27000,
+    "diversityRatioPct": 113,
+    "maxCoverageSqFt": 1091,
+    "useCase": "Dual-Zone Workshop & Office (112% Diversity Ratio)",
+    "voltage": "208/230V",
+    "breaker": "25A–30A Double-Pole",
+    "wire": "10 AWG Copper (10/2 + G)",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "24k-2-zone-mini-split-12k-18k",
+    "title": "24,000 BTU 2-Zone Mini Split (12k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "24k BTU 2-Zone (12k+18k)",
+    "condenserBtu": 24000,
+    "zones": 2,
+    "heads": [
+      12000,
+      18000
+    ],
+    "totalHeadBtu": 30000,
+    "diversityRatioPct": 125,
+    "maxCoverageSqFt": 1091,
+    "useCase": "2-Zone High-Diversity Split (125% Max Ratio)",
+    "voltage": "208/230V",
+    "breaker": "25A–30A Double-Pole",
+    "wire": "10 AWG Copper (10/2 + G)",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "27k-2-zone-mini-split-9k-18k",
+    "title": "27,000 BTU 2-Zone Mini Split (9k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "27k BTU 2-Zone (9k+18k)",
+    "condenserBtu": 27000,
+    "zones": 2,
+    "heads": [
+      9000,
+      18000
+    ],
+    "totalHeadBtu": 27000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1227,
+    "useCase": "Exact 100% Match Great Room + Suite (Up to 1,300 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "27k-2-zone-mini-split-12k-15k",
+    "title": "27,000 BTU 2-Zone Mini Split (12k + 15k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "27k BTU 2-Zone (12k+15k)",
+    "condenserBtu": 27000,
+    "zones": 2,
+    "heads": [
+      12000,
+      15000
+    ],
+    "totalHeadBtu": 27000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1227,
+    "useCase": "Exact 100% Match 2-Story Split (Up to 1,300 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "30k-2-zone-mini-split-12k-18k",
+    "title": "30,000 BTU 2-Zone Mini Split (12k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "30k BTU 2-Zone (12k+18k)",
+    "condenserBtu": 30000,
+    "zones": 2,
+    "heads": [
+      12000,
+      18000
+    ],
+    "totalHeadBtu": 30000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1364,
+    "useCase": "Large 2-Zone Shop + Living Space (Up to 1,450 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "30k-2-zone-mini-split-15k-15k",
+    "title": "30,000 BTU 2-Zone Mini Split (15k + 15k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "30k BTU 2-Zone (15k+15k)",
+    "condenserBtu": 30000,
+    "zones": 2,
+    "heads": [
+      15000,
+      15000
+    ],
+    "totalHeadBtu": 30000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1364,
+    "useCase": "Twin 15k Zones for Large Open Floorplan (Up to 1,450 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "36k-2-zone-mini-split-18k-18k",
+    "title": "36,000 BTU 2-Zone Mini Split (18k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 2-Zone (18k+18k)",
+    "condenserBtu": 36000,
+    "zones": 2,
+    "heads": [
+      18000,
+      18000
+    ],
+    "totalHeadBtu": 36000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1636,
+    "useCase": "Twin 18k Pole Barn or 2-Floor Heavy Load (Up to 1,750 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "24k-3-zone-mini-split-6k-9k-9k",
+    "title": "24,000 BTU 3-Zone Mini Split (6k + 9k + 9k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "24k BTU 3-Zone (6k+9k+9k)",
+    "condenserBtu": 24000,
+    "zones": 3,
+    "heads": [
+      6000,
+      9000,
+      9000
+    ],
+    "totalHeadBtu": 24000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1091,
+    "useCase": "3-Bedroom Upstairs Cooling Zone (Up to 1,100 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "25A–30A Double-Pole",
+    "wire": "10 AWG Copper (10/2 + G)",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "24k-3-zone-mini-split-9k-9k-9k",
+    "title": "24,000 BTU 3-Zone Mini Split (9k + 9k + 9k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "24k BTU 3-Zone (9k+9k+9k)",
+    "condenserBtu": 24000,
+    "zones": 3,
+    "heads": [
+      9000,
+      9000,
+      9000
+    ],
+    "totalHeadBtu": 27000,
+    "diversityRatioPct": 113,
+    "maxCoverageSqFt": 1091,
+    "useCase": "3 Small Bedrooms on 24k Condenser (112% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "25A–30A Double-Pole",
+    "wire": "10 AWG Copper (10/2 + G)",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "24k-3-zone-mini-split-6k-6k-12k",
+    "title": "24,000 BTU 3-Zone Mini Split (6k + 6k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "24k BTU 3-Zone (6k+6k+12k)",
+    "condenserBtu": 24000,
+    "zones": 3,
+    "heads": [
+      6000,
+      6000,
+      12000
+    ],
+    "totalHeadBtu": 24000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1091,
+    "useCase": "2 Offices + Living Area (Up to 1,100 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "25A–30A Double-Pole",
+    "wire": "10 AWG Copper (10/2 + G)",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "27k-3-zone-mini-split-9k-9k-9k",
+    "title": "27,000 BTU 3-Zone Mini Split (9k + 9k + 9k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "27k BTU 3-Zone (9k+9k+9k)",
+    "condenserBtu": 27000,
+    "zones": 3,
+    "heads": [
+      9000,
+      9000,
+      9000
+    ],
+    "totalHeadBtu": 27000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1227,
+    "useCase": "Exact 100% Match 3-Bedroom Upstairs (Up to 1,250 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "27k-3-zone-mini-split-6k-9k-12k",
+    "title": "27,000 BTU 3-Zone Mini Split (6k + 9k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "27k BTU 3-Zone (6k+9k+12k)",
+    "condenserBtu": 27000,
+    "zones": 3,
+    "heads": [
+      6000,
+      9000,
+      12000
+    ],
+    "totalHeadBtu": 27000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1227,
+    "useCase": "1,250 Sq Ft 2-Bedroom Condo / Cottage",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "27k-3-zone-mini-split-9k-9k-12k",
+    "title": "27,000 BTU 3-Zone Mini Split (9k + 9k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "27k BTU 3-Zone (9k+9k+12k)",
+    "condenserBtu": 27000,
+    "zones": 3,
+    "heads": [
+      9000,
+      9000,
+      12000
+    ],
+    "totalHeadBtu": 30000,
+    "diversityRatioPct": 111,
+    "maxCoverageSqFt": 1227,
+    "useCase": "3-Zone Cottage (111% Diversity Ratio)",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "30k-3-zone-mini-split-9k-9k-12k",
+    "title": "30,000 BTU 3-Zone Mini Split (9k + 9k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "30k BTU 3-Zone (9k+9k+12k)",
+    "condenserBtu": 30000,
+    "zones": 3,
+    "heads": [
+      9000,
+      9000,
+      12000
+    ],
+    "totalHeadBtu": 30000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1364,
+    "useCase": "Exact 100% Match 1,400 Sq Ft Ranch Home",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "30k-3-zone-mini-split-6k-12k-12k",
+    "title": "30,000 BTU 3-Zone Mini Split (6k + 12k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "30k BTU 3-Zone (6k+12k+12k)",
+    "condenserBtu": 30000,
+    "zones": 3,
+    "heads": [
+      6000,
+      12000,
+      12000
+    ],
+    "totalHeadBtu": 30000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1364,
+    "useCase": "Office + Master + Living Room (Up to 1,400 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "30k-3-zone-mini-split-9k-12k-12k",
+    "title": "30,000 BTU 3-Zone Mini Split (9k + 12k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "30k BTU 3-Zone (9k+12k+12k)",
+    "condenserBtu": 30000,
+    "zones": 3,
+    "heads": [
+      9000,
+      12000,
+      12000
+    ],
+    "totalHeadBtu": 33000,
+    "diversityRatioPct": 110,
+    "maxCoverageSqFt": 1364,
+    "useCase": "3-Zone 1,450 Sq Ft Home (110% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "30k-3-zone-mini-split-9k-9k-18k",
+    "title": "30,000 BTU 3-Zone Mini Split (9k + 9k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "30k BTU 3-Zone (9k+9k+18k)",
+    "condenserBtu": 30000,
+    "zones": 3,
+    "heads": [
+      9000,
+      9000,
+      18000
+    ],
+    "totalHeadBtu": 36000,
+    "diversityRatioPct": 120,
+    "maxCoverageSqFt": 1364,
+    "useCase": "Large Living Room + 2 Bedrooms (120% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "36k-3-zone-mini-split-9k-9k-18k",
+    "title": "36,000 BTU 3-Zone Mini Split (9k + 9k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 3-Zone (9k+9k+18k)",
+    "condenserBtu": 36000,
+    "zones": 3,
+    "heads": [
+      9000,
+      9000,
+      18000
+    ],
+    "totalHeadBtu": 36000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1636,
+    "useCase": "Most Popular 3-Zone Ranch System (Up to 1,700 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "36k-3-zone-mini-split-12k-12k-12k",
+    "title": "36,000 BTU 3-Zone Mini Split (12k + 12k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 3-Zone (12k+12k+12k)",
+    "condenserBtu": 36000,
+    "zones": 3,
+    "heads": [
+      12000,
+      12000,
+      12000
+    ],
+    "totalHeadBtu": 36000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1636,
+    "useCase": "Balanced 3-Zone Triplex / 3-Bay Shop (Up to 1,700 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "36k-3-zone-mini-split-9k-12k-15k",
+    "title": "36,000 BTU 3-Zone Mini Split (9k + 12k + 15k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 3-Zone (9k+12k+15k)",
+    "condenserBtu": 36000,
+    "zones": 3,
+    "heads": [
+      9000,
+      12000,
+      15000
+    ],
+    "totalHeadBtu": 36000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1636,
+    "useCase": "3-Zone 1,700 Sq Ft Family Home",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "36k-3-zone-mini-split-9k-12k-18k",
+    "title": "36,000 BTU 3-Zone Mini Split (9k + 12k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 3-Zone (9k+12k+18k)",
+    "condenserBtu": 36000,
+    "zones": 3,
+    "heads": [
+      9000,
+      12000,
+      18000
+    ],
+    "totalHeadBtu": 39000,
+    "diversityRatioPct": 108,
+    "maxCoverageSqFt": 1636,
+    "useCase": "3-Zone Open Floorplan (108% Diversity Ratio)",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "36k-3-zone-mini-split-12k-12k-18k",
+    "title": "36,000 BTU 3-Zone Mini Split (12k + 12k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 3-Zone (12k+12k+18k)",
+    "condenserBtu": 36000,
+    "zones": 3,
+    "heads": [
+      12000,
+      12000,
+      18000
+    ],
+    "totalHeadBtu": 42000,
+    "diversityRatioPct": 117,
+    "maxCoverageSqFt": 1636,
+    "useCase": "3-Zone Large Home / Barndo (117% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "42k-3-zone-mini-split-12k-12k-18k",
+    "title": "42,000 BTU 3-Zone Mini Split (12k + 12k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "42k BTU 3-Zone (12k+12k+18k)",
+    "condenserBtu": 42000,
+    "zones": 3,
+    "heads": [
+      12000,
+      12000,
+      18000
+    ],
+    "totalHeadBtu": 42000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1909,
+    "useCase": "Exact 100% Match 2,000 Sq Ft 3-Zone Home",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "42k-3-zone-mini-split-9k-15k-18k",
+    "title": "42,000 BTU 3-Zone Mini Split (9k + 15k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "42k BTU 3-Zone (9k+15k+18k)",
+    "condenserBtu": 42000,
+    "zones": 3,
+    "heads": [
+      9000,
+      15000,
+      18000
+    ],
+    "totalHeadBtu": 42000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1909,
+    "useCase": "3-Zone Main Floor + Upstairs + Bonus Room",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "42k-3-zone-mini-split-12k-15k-15k",
+    "title": "42,000 BTU 3-Zone Mini Split (12k + 15k + 15k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "42k BTU 3-Zone (12k+15k+15k)",
+    "condenserBtu": 42000,
+    "zones": 3,
+    "heads": [
+      12000,
+      15000,
+      15000
+    ],
+    "totalHeadBtu": 42000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1909,
+    "useCase": "3-Zone Heavy-Load Commercial / Residence",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "48k-3-zone-mini-split-12k-18k-18k",
+    "title": "48,000 BTU 3-Zone Mini Split (12k + 18k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "48k BTU 3-Zone (12k+18k+18k)",
+    "condenserBtu": 48000,
+    "zones": 3,
+    "heads": [
+      12000,
+      18000,
+      18000
+    ],
+    "totalHeadBtu": 48000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 2182,
+    "useCase": "3-Zone Large Pole Barn / 2,300 Sq Ft Home",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "48k-3-zone-mini-split-15k-15k-18k",
+    "title": "48,000 BTU 3-Zone Mini Split (15k + 15k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "48k BTU 3-Zone (15k+15k+18k)",
+    "condenserBtu": 48000,
+    "zones": 3,
+    "heads": [
+      15000,
+      15000,
+      18000
+    ],
+    "totalHeadBtu": 48000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 2182,
+    "useCase": "3-Zone Commercial Office / Open Barndominium",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "30k-4-zone-mini-split-6k-6k-9k-9k",
+    "title": "30,000 BTU 4-Zone Mini Split (6k + 6k + 9k + 9k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "30k BTU 4-Zone (6k+6k+9k+9k)",
+    "condenserBtu": 30000,
+    "zones": 4,
+    "heads": [
+      6000,
+      6000,
+      9000,
+      9000
+    ],
+    "totalHeadBtu": 30000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1364,
+    "useCase": "4-Bedroom Upstairs Zone (Up to 1,350 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "30k-4-zone-mini-split-9k-9k-9k-9k",
+    "title": "30,000 BTU 4-Zone Mini Split (9k + 9k + 9k + 9k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "30k BTU 4-Zone (9k+9k+9k+9k)",
+    "condenserBtu": 30000,
+    "zones": 4,
+    "heads": [
+      9000,
+      9000,
+      9000,
+      9000
+    ],
+    "totalHeadBtu": 36000,
+    "diversityRatioPct": 120,
+    "maxCoverageSqFt": 1364,
+    "useCase": "4 Small Rooms on 30k Condenser (120% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "30A Double-Pole",
+    "wire": "10 AWG Copper",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "36k-4-zone-mini-split-9k-9k-9k-9k",
+    "title": "36,000 BTU 4-Zone Mini Split (9k + 9k + 9k + 9k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 4-Zone (9k+9k+9k+9k)",
+    "condenserBtu": 36000,
+    "zones": 4,
+    "heads": [
+      9000,
+      9000,
+      9000,
+      9000
+    ],
+    "totalHeadBtu": 36000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1636,
+    "useCase": "Exact 100% Match 4-Bedroom Whole Upstairs",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "36k-4-zone-mini-split-6k-9k-9k-12k",
+    "title": "36,000 BTU 4-Zone Mini Split (6k + 9k + 9k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 4-Zone (6k+9k+9k+12k)",
+    "condenserBtu": 36000,
+    "zones": 4,
+    "heads": [
+      6000,
+      9000,
+      9000,
+      12000
+    ],
+    "totalHeadBtu": 36000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1636,
+    "useCase": "3 Bedrooms + Main Living Area (Up to 1,650 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "36k-4-zone-mini-split-9k-9k-9k-12k",
+    "title": "36,000 BTU 4-Zone Mini Split (9k + 9k + 9k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 4-Zone (9k+9k+9k+12k)",
+    "condenserBtu": 36000,
+    "zones": 4,
+    "heads": [
+      9000,
+      9000,
+      9000,
+      12000
+    ],
+    "totalHeadBtu": 39000,
+    "diversityRatioPct": 108,
+    "maxCoverageSqFt": 1636,
+    "useCase": "Popular 4-Zone 1,700 Sq Ft Home (108% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "36k-4-zone-mini-split-6k-6k-12k-12k",
+    "title": "36,000 BTU 4-Zone Mini Split (6k + 6k + 12k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 4-Zone (6k+6k+12k+12k)",
+    "condenserBtu": 36000,
+    "zones": 4,
+    "heads": [
+      6000,
+      6000,
+      12000,
+      12000
+    ],
+    "totalHeadBtu": 36000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1636,
+    "useCase": "2 Bedrooms + Living + Basement (Up to 1,650 Sq Ft)",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "36k-4-zone-mini-split-9k-9k-12k-12k",
+    "title": "36,000 BTU 4-Zone Mini Split (9k + 9k + 12k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 4-Zone (9k+9k+12k+12k)",
+    "condenserBtu": 36000,
+    "zones": 4,
+    "heads": [
+      9000,
+      9000,
+      12000,
+      12000
+    ],
+    "totalHeadBtu": 42000,
+    "diversityRatioPct": 117,
+    "maxCoverageSqFt": 1636,
+    "useCase": "4-Zone 1,800 Sq Ft Home (117% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "36k-4-zone-mini-split-6k-9k-9k-18k",
+    "title": "36,000 BTU 4-Zone Mini Split (6k + 9k + 9k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 4-Zone (6k+9k+9k+18k)",
+    "condenserBtu": 36000,
+    "zones": 4,
+    "heads": [
+      6000,
+      9000,
+      9000,
+      18000
+    ],
+    "totalHeadBtu": 42000,
+    "diversityRatioPct": 117,
+    "maxCoverageSqFt": 1636,
+    "useCase": "Great Room + 3 Bedrooms (117% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "42k-4-zone-mini-split-9k-9k-12k-12k",
+    "title": "42,000 BTU 4-Zone Mini Split (9k + 9k + 12k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "42k BTU 4-Zone (9k+9k+12k+12k)",
+    "condenserBtu": 42000,
+    "zones": 4,
+    "heads": [
+      9000,
+      9000,
+      12000,
+      12000
+    ],
+    "totalHeadBtu": 42000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1909,
+    "useCase": "Exact 100% Match 4-Zone 2,000 Sq Ft Home",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "42k-4-zone-mini-split-6k-9k-12k-15k",
+    "title": "42,000 BTU 4-Zone Mini Split (6k + 9k + 12k + 15k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "42k BTU 4-Zone (6k+9k+12k+15k)",
+    "condenserBtu": 42000,
+    "zones": 4,
+    "heads": [
+      6000,
+      9000,
+      12000,
+      15000
+    ],
+    "totalHeadBtu": 42000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 1909,
+    "useCase": "4-Zone 2,000 Sq Ft Split-Level Home",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "42k-4-zone-mini-split-9k-9k-9k-18k",
+    "title": "42,000 BTU 4-Zone Mini Split (9k + 9k + 9k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "42k BTU 4-Zone (9k+9k+9k+18k)",
+    "condenserBtu": 42000,
+    "zones": 4,
+    "heads": [
+      9000,
+      9000,
+      9000,
+      18000
+    ],
+    "totalHeadBtu": 45000,
+    "diversityRatioPct": 107,
+    "maxCoverageSqFt": 1909,
+    "useCase": "4-Zone 2,050 Sq Ft Ranch (107% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "42k-4-zone-mini-split-9k-12k-12k-15k",
+    "title": "42,000 BTU 4-Zone Mini Split (9k + 12k + 12k + 15k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "42k BTU 4-Zone (9k+12k+12k+15k)",
+    "condenserBtu": 42000,
+    "zones": 4,
+    "heads": [
+      9000,
+      12000,
+      12000,
+      15000
+    ],
+    "totalHeadBtu": 48000,
+    "diversityRatioPct": 114,
+    "maxCoverageSqFt": 1909,
+    "useCase": "4-Zone 2,150 Sq Ft Home (114% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "48k-4-zone-mini-split-12k-12k-12k-12k",
+    "title": "48,000 BTU 4-Zone Mini Split (12k + 12k + 12k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "48k BTU 4-Zone (12k+12k+12k+12k)",
+    "condenserBtu": 48000,
+    "zones": 4,
+    "heads": [
+      12000,
+      12000,
+      12000,
+      12000
+    ],
+    "totalHeadBtu": 48000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 2182,
+    "useCase": "Exact 100% Match 4-Zone 2,300 Sq Ft Home",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "48k-4-zone-mini-split-9k-9k-12k-18k",
+    "title": "48,000 BTU 4-Zone Mini Split (9k + 9k + 12k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "48k BTU 4-Zone (9k+9k+12k+18k)",
+    "condenserBtu": 48000,
+    "zones": 4,
+    "heads": [
+      9000,
+      9000,
+      12000,
+      18000
+    ],
+    "totalHeadBtu": 48000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 2182,
+    "useCase": "Exact 100% Match Great Room + 3 Suites",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "48k-4-zone-mini-split-9k-12k-12k-18k",
+    "title": "48,000 BTU 4-Zone Mini Split (9k + 12k + 12k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "48k BTU 4-Zone (9k+12k+12k+18k)",
+    "condenserBtu": 48000,
+    "zones": 4,
+    "heads": [
+      9000,
+      12000,
+      12000,
+      18000
+    ],
+    "totalHeadBtu": 51000,
+    "diversityRatioPct": 106,
+    "maxCoverageSqFt": 2182,
+    "useCase": "4-Zone 2,400 Sq Ft Home (106% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "48k-4-zone-mini-split-12k-12k-12k-18k",
+    "title": "48,000 BTU 4-Zone Mini Split (12k + 12k + 12k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "48k BTU 4-Zone (12k+12k+12k+18k)",
+    "condenserBtu": 48000,
+    "zones": 4,
+    "heads": [
+      12000,
+      12000,
+      12000,
+      18000
+    ],
+    "totalHeadBtu": 54000,
+    "diversityRatioPct": 113,
+    "maxCoverageSqFt": 2182,
+    "useCase": "4-Zone Large Colonial / Barndo (112% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "48k-4-zone-mini-split-9k-12k-18k-18k",
+    "title": "48,000 BTU 4-Zone Mini Split (9k + 12k + 18k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "48k BTU 4-Zone (9k+12k+18k+18k)",
+    "condenserBtu": 48000,
+    "zones": 4,
+    "heads": [
+      9000,
+      12000,
+      18000,
+      18000
+    ],
+    "totalHeadBtu": 57000,
+    "diversityRatioPct": 119,
+    "maxCoverageSqFt": 2182,
+    "useCase": "4-Zone High-Diversity Split (119% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "36k-5-zone-mini-split-6k-6k-9k-9k-9k",
+    "title": "36,000 BTU 5-Zone Mini Split (6k + 6k + 9k + 9k + 9k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "36k BTU 5-Zone (6k+6k+9k+9k+9k)",
+    "condenserBtu": 36000,
+    "zones": 5,
+    "heads": [
+      6000,
+      6000,
+      9000,
+      9000,
+      9000
+    ],
+    "totalHeadBtu": 39000,
+    "diversityRatioPct": 108,
+    "maxCoverageSqFt": 1636,
+    "useCase": "5-Zone Small Room Retrofit (108% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "35A–40A Double-Pole",
+    "wire": "8 AWG Copper",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "42k-5-zone-mini-split-6k-9k-9k-9k-12k",
+    "title": "42,000 BTU 5-Zone Mini Split (6k + 9k + 9k + 9k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "42k BTU 5-Zone (6k+9k+9k+9k+12k)",
+    "condenserBtu": 42000,
+    "zones": 5,
+    "heads": [
+      6000,
+      9000,
+      9000,
+      9000,
+      12000
+    ],
+    "totalHeadBtu": 45000,
+    "diversityRatioPct": 107,
+    "maxCoverageSqFt": 1909,
+    "useCase": "5-Zone 2,000 Sq Ft Colonial (107% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "48k-5-zone-mini-split-9k-9k-9k-9k-12k",
+    "title": "48,000 BTU 5-Zone Mini Split (9k + 9k + 9k + 9k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "48k BTU 5-Zone (9k+9k+9k+9k+12k)",
+    "condenserBtu": 48000,
+    "zones": 5,
+    "heads": [
+      9000,
+      9000,
+      9000,
+      9000,
+      12000
+    ],
+    "totalHeadBtu": 48000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 2182,
+    "useCase": "Exact 100% Match 5-Zone 2,300 Sq Ft Home",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "48k-5-zone-mini-split-6k-9k-9k-12k-12k",
+    "title": "48,000 BTU 5-Zone Mini Split (6k + 9k + 9k + 12k + 12k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "48k BTU 5-Zone (6k+9k+9k+12k+12k)",
+    "condenserBtu": 48000,
+    "zones": 5,
+    "heads": [
+      6000,
+      9000,
+      9000,
+      12000,
+      12000
+    ],
+    "totalHeadBtu": 48000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 2182,
+    "useCase": "Exact 100% Match 4-Bed + Living Area",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "48k-5-zone-mini-split-9k-9k-9k-12k-15k",
+    "title": "48,000 BTU 5-Zone Mini Split (9k + 9k + 9k + 12k + 15k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "48k BTU 5-Zone (9k+9k+9k+12k+15k)",
+    "condenserBtu": 48000,
+    "zones": 5,
+    "heads": [
+      9000,
+      9000,
+      9000,
+      12000,
+      15000
+    ],
+    "totalHeadBtu": 54000,
+    "diversityRatioPct": 113,
+    "maxCoverageSqFt": 2182,
+    "useCase": "5-Zone 2,500 Sq Ft Home (112% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "48k-5-zone-mini-split-9k-9k-9k-12k-18k",
+    "title": "48,000 BTU 5-Zone Mini Split (9k + 9k + 9k + 12k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "48k BTU 5-Zone (9k+9k+9k+12k+18k)",
+    "condenserBtu": 48000,
+    "zones": 5,
+    "heads": [
+      9000,
+      9000,
+      9000,
+      12000,
+      18000
+    ],
+    "totalHeadBtu": 57000,
+    "diversityRatioPct": 119,
+    "maxCoverageSqFt": 2182,
+    "useCase": "5-Zone 2,600 Sq Ft Home (119% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "45A–50A Double-Pole",
+    "wire": "8 AWG THHN / 6 AWG Romex",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  },
+  {
+    "slug": "60k-5-zone-mini-split-9k-9k-12k-12k-18k",
+    "title": "60,000 BTU 5-Zone Mini Split (9k + 9k + 12k + 12k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "60k BTU 5-Zone (9k+9k+12k+12k+18k)",
+    "condenserBtu": 60000,
+    "zones": 5,
+    "heads": [
+      9000,
+      9000,
+      12000,
+      12000,
+      18000
+    ],
+    "totalHeadBtu": 60000,
+    "diversityRatioPct": 100,
+    "maxCoverageSqFt": 2727,
+    "useCase": "Exact 100% Match 5-Zone 2,900 Sq Ft Home",
+    "voltage": "208/230V",
+    "breaker": "60A Double-Pole",
+    "wire": "6 AWG Copper THHN",
+    "statusText": "Optimal 100% Full Simultaneous Output"
+  },
+  {
+    "slug": "60k-5-zone-mini-split-12k-12k-12k-12k-18k",
+    "title": "60,000 BTU 5-Zone Mini Split (12k + 12k + 12k + 12k + 18k): Sq Ft, Ratio & Breaker",
+    "shortLabel": "60k BTU 5-Zone (12k+12k+12k+12k+18k)",
+    "condenserBtu": 60000,
+    "zones": 5,
+    "heads": [
+      12000,
+      12000,
+      12000,
+      12000,
+      18000
+    ],
+    "totalHeadBtu": 66000,
+    "diversityRatioPct": 110,
+    "maxCoverageSqFt": 2727,
+    "useCase": "5-Zone 3,000+ Sq Ft Commercial / Estate (110% Ratio)",
+    "voltage": "208/230V",
+    "breaker": "60A Double-Pole",
+    "wire": "6 AWG Copper THHN",
+    "statusText": "Valid Diversity Ratio (Shared Peak Output)"
+  }
+]

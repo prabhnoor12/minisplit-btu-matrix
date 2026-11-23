@@ -1,0 +1,18 @@
+{
+  "name": "minisplit-btu-matrix",
+  "version": "1.0.0",
+  "description": "MiniSplitBTUMatrix — 241-Page Room & Garage Square-Footage Mini-Split BTU, Tonnage, Multi-Zone Condenser & SEER2 Electrical Sizing Matrix",
+  "scripts": {
+    "seed": "node src/seed-hvac-data.js",
+    "build": "node src/build.js"
+  },
+  "keywords": [
+    "mini-split-btu-calculator",
+    "hvac-tonnage-sizing",
+    "garage-mini-split",
+    "multi-zone-mini-split",
+    "seer2-operating-cost"
+  ],
+  "author": "MiniSplitBTUMatrix Engineering",
+  "license": "MIT"
+}
