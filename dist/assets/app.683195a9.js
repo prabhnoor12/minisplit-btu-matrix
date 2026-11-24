@@ -163,4 +163,153 @@
       });
     }, 35000);
   }
+  // 6. Retention & Dwell-Time Suite: Payback Simulator, BOM Checklist, Share/Print & Saved Binder
+  const payRoot = document.getElementById('payback-simulator');
+  const payCurrent = document.getElementById('pay-current');
+  const payInstall = document.getElementById('pay-install');
+  const syncPayback = () => {
+    if (!payRoot || !payCurrent || !payInstall) return;
+    const btuTxt = document.getElementById('out-btu')?.textContent || payRoot.dataset.btu || '12000';
+    const btu = Math.max(6000, parseInt(btuTxt.replace(/[^0-9]/g, ''), 10) || 12000);
+    const rate = Math.max(0.06, parseFloat(document.getElementById('inp-rate')?.value || '0.16'));
+    const installCost = Math.max(400, parseFloat(payInstall.value || '1600'));
+    // Annual heating/cooling thermal load in MMBtu scaled to unit capacity
+    const annualMmbtu = (btu / 12000) * 14.5;
+    // Mini-split average seasonal COP ~3.1
+    const miniSplitAnnual = Math.round(((annualMmbtu * 293.07) / 3.1) * rate);
+    const multipliers = { baseboard: 3.1, window: 2.15, propane: 2.25, oil: 2.45 };
+    const oldAnnual = Math.round(miniSplitAnnual * (multipliers[payCurrent.value] || 2.5));
+    const annualSavings = Math.max(85, oldAnnual - miniSplitAnnual);
+    const fiveYrNet = annualSavings * 5 - installCost;
+    const yrs = (installCost / annualSavings).toFixed(1);
+
+    const elA = document.getElementById('pay-annual');
+    const el5 = document.getElementById('pay-5yr');
+    const elY = document.getElementById('pay-years');
+    if (elA) elA.textContent = `$${annualSavings.toLocaleString()}/yr`;
+    if (el5) el5.textContent = `${fiveYrNet >= 0 ? '+' : ''}$${fiveYrNet.toLocaleString()}`;
+    if (elY) elY.textContent = `${yrs} yrs`;
+  };
+  if (payRoot) {
+    payCurrent?.addEventListener('change', syncPayback);
+    payInstall?.addEventListener('input', syncPayback);
+    ['inp-sqft', 'inp-ceil', 'inp-ins', 'inp-clim', 'inp-seer', 'inp-rate'].forEach(id => {
+      document.getElementById(id)?.addEventListener('input', syncPayback);
+      document.getElementById(id)?.addEventListener('change', syncPayback);
+    });
+    syncPayback();
+  }
+
+  // URL Query Param Hydrator + Copy Share Link + Print
+  const urlParams = new URLSearchParams(window.location.search);
+  ['sqft', 'ceil', 'ins', 'clim', 'seer', 'rate'].forEach(k => {
+    if (urlParams.has(k)) {
+      const el = document.getElementById('inp-' + k);
+      if (el) { el.value = urlParams.get(k); el.dispatchEvent(new Event('input', { bubbles: true })); }
+    }
+  });
+  document.getElementById('btn-copy-link')?.addEventListener('click', (e) => {
+    const q = new URLSearchParams();
+    ['sqft', 'ceil', 'ins', 'clim', 'seer', 'rate'].forEach(k => {
+      const v = document.getElementById('inp-' + k)?.value;
+      if (v) q.set(k, v);
+    });
+    const fullUrl = `${window.location.origin}${window.location.pathname}?${q.toString()}`;
+    navigator.clipboard?.writeText(fullUrl).then(() => {
+      e.target.textContent = '✓ Spec Link Copied!';
+      setTimeout(() => { e.target.textContent = '🔗 Copy Shareable Link'; }, 2200);
+    });
+  });
+  document.getElementById('btn-print-sheet')?.addEventListener('click', () => window.print());
+
+  // Interactive BOM Checklist (localStorage per page)
+  const bomRoot = document.getElementById('hvac-bom-checklist');
+  if (bomRoot) {
+    const key = 'minisplit-bom:' + window.location.pathname;
+    const rows = Array.from(bomRoot.querySelectorAll('.bom-row'));
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(key) || '{}'); } catch (_) {}
+    const syncBom = () => {
+      let checked = 0, sum = 0;
+      const next = {};
+      rows.forEach(r => {
+        const id = r.dataset.bomId;
+        const chk = r.querySelector('input[type="checkbox"]');
+        const p = Math.max(0, Number(r.querySelector('.bom-price-input')?.value || 0));
+        sum += p;
+        if (chk?.checked) { checked++; r.classList.add('checked'); } else r.classList.remove('checked');
+        next[id] = { checked: !!chk?.checked, price: p };
+      });
+      const prog = document.getElementById('bom-progress-txt');
+      const tot = document.getElementById('bom-grand-total');
+      if (prog) prog.textContent = `${checked} / ${rows.length} Checked`;
+      if (tot) tot.textContent = `$${sum.toLocaleString()}`;
+      try { localStorage.setItem(key, JSON.stringify(next)); } catch (_) {}
+    };
+    rows.forEach(r => {
+      const id = r.dataset.bomId;
+      const chk = r.querySelector('input[type="checkbox"]');
+      const inp = r.querySelector('.bom-price-input');
+      if (saved[id]) {
+        if (chk) chk.checked = !!saved[id].checked;
+        if (inp && typeof saved[id].price === 'number') inp.value = String(saved[id].price);
+      }
+      chk?.addEventListener('change', syncBom);
+      inp?.addEventListener('input', syncBom);
+    });
+    syncBom();
+  }
+
+  // Saved HVAC Zones Project Binder Drawer (localStorage site-wide)
+  const BINDER_KEY = 'minisplit-binder-v1';
+  const drawer = document.getElementById('project-binder-drawer');
+  const backdrop = document.getElementById('binder-backdrop');
+  const countEl = document.getElementById('binder-count');
+  const listEl = document.getElementById('binder-items-list');
+  const getBinder = () => { try { return JSON.parse(localStorage.getItem(BINDER_KEY) || '[]'); } catch (_) { return []; } };
+  const setBinder = arr => { try { localStorage.setItem(BINDER_KEY, JSON.stringify(arr)); } catch (_) {} };
+  const renderBinder = () => {
+    const items = getBinder();
+    if (countEl) countEl.textContent = String(items.length);
+    if (!listEl) return;
+    if (!items.length) {
+      listEl.innerHTML = '<p style="font-size:0.84rem;color:var(--text-muted)">No saved rooms yet. Click <strong>📌 Save Zone to Binder</strong> on any room or garage page to build your multi-room HVAC plan.</p>';
+      return;
+    }
+    listEl.innerHTML = items.map((it, i) => `
+      <div class="binder-item">
+        <strong>${it.label}</strong>
+        <div style="font-family:var(--font-mono);margin:4px 0">${it.spec}</div>
+        <div style="font-size:0.74rem;color:var(--text-muted)">${it.date}</div>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <a href="${it.url}" class="action-pill" style="text-decoration:none">Open →</a>
+          <button type="button" class="action-pill" data-del-binder="${i}">Delete</button>
+        </div>
+      </div>`).join('');
+  };
+  const openDrawer = () => { drawer?.classList.add('open'); backdrop?.classList.add('open'); renderBinder(); };
+  const closeDrawer = () => { drawer?.classList.remove('open'); backdrop?.classList.remove('open'); };
+  document.getElementById('btn-open-binder')?.addEventListener('click', openDrawer);
+  document.getElementById('btn-close-binder')?.addEventListener('click', closeDrawer);
+  backdrop?.addEventListener('click', closeDrawer);
+  document.getElementById('btn-save-zone')?.addEventListener('click', () => {
+    const btu = document.getElementById('out-btu')?.textContent || '';
+    const brk = document.getElementById('out-breaker')?.textContent || '';
+    const label = window.prompt('Name this room/zone (e.g., 2-Car Garage, Master Bedroom):', document.querySelector('h1')?.textContent.slice(0, 38) || 'HVAC Zone');
+    if (!label) return;
+    const items = getBinder();
+    items.unshift({ label: label.trim(), spec: `${btu} • ${brk}`, url: window.location.pathname, date: new Date().toLocaleDateString() });
+    setBinder(items.slice(0, 20));
+    renderBinder();
+    openDrawer();
+  });
+  listEl?.addEventListener('click', (e) => {
+    const del = e.target.closest('button[data-del-binder]');
+    if (!del) return;
+    const items = getBinder();
+    items.splice(Number(del.dataset.delBinder), 1);
+    setBinder(items);
+    renderBinder();
+  });
+  renderBinder();
 })();

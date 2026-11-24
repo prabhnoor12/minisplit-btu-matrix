@@ -100,6 +100,7 @@ function renderLayout({ title, description, canonicalPath, breadcrumbs, jsonLdGr
         <input id="quick-jump" type="search" list="hvac-pages-list" placeholder="Jump to 500 sq ft, 2-Car Garage, 36k 3-Zone..." aria-label="Search mini split sizing pages">
         ${DATALIST_HTML}
       </search>
+      <button id="btn-open-binder" class="binder-btn" type="button" aria-label="Open saved zones binder">📌 Binder (<span id="binder-count">0</span>)</button>
       <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle color theme">🌙 Dark</button>
     </div>
   </header>
@@ -113,6 +114,14 @@ function renderLayout({ title, description, canonicalPath, breadcrumbs, jsonLdGr
       <main>
         <nav class="breadcrumb" aria-label="Breadcrumb">${bcHtml}</nav>
         ${mainHtml}
+        <section class="sister-widget deferred-section" aria-label="Sister Engineering Calculators">
+          <h3 style="margin:0;font-size:0.98rem">🔗 Complete Your Install — Sister Engineering Calculators</h3>
+          <div class="sister-grid">
+            <a class="sister-card" href="https://wiresizematrix.com" rel="noopener"><strong>⚡ WireSizeMatrix.com</strong>Need the exact 230V breaker, copper wire gauge &amp; conduit size for your condenser? →</a>
+            <a class="sister-card" href="https://slabyardmatrix.com" rel="noopener"><strong>🧱 SlabYardMatrix.com</strong>Pouring an outdoor condenser pad or insulated garage slab? Calculate bags &amp; yards →</a>
+            <a class="sister-card" href="https://wattsurgematrix.com" rel="noopener"><strong>🔋 WattSurgeMatrix.com</strong>Running your inverter mini-split off-grid or on backup power? Check battery runtime →</a>
+          </div>
+        </section>
       </main>
       <aside class="sidebar-col">
         <div class="ad-slot ad-sidebar" data-refresh="true" aria-label="Sidebar Advertisement">
@@ -141,6 +150,16 @@ function renderLayout({ title, description, canonicalPath, breadcrumbs, jsonLdGr
       <p>&copy; 2026 ${SITE_NAME}. Thermal sizing estimates apply ceiling-volume scaling, envelope R-value multipliers, and IECC climate zone heat-pump derating. Always verify final equipment nameplate MCA/MOP and perform a room-by-room ACCA Manual J calculation for whole-house retrofits.</p>
     </div>
   </footer>
+
+  <div class="binder-backdrop" id="binder-backdrop"></div>
+  <aside class="binder-drawer" id="project-binder-drawer" aria-label="Saved HVAC Zones Binder">
+    <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--brand);padding-bottom:10px;margin-bottom:12px">
+      <strong style="font-family:var(--font-mono)">📌 Saved HVAC Zones Binder</strong>
+      <button id="btn-close-binder" class="theme-btn" type="button">✕ Close</button>
+    </div>
+    <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0">Saved locally in your browser so you can compare room-by-room BTUs &amp; electrical specs with your installer.</p>
+    <div id="binder-items-list"></div>
+  </aside>
 
   <div class="ad-mobile-sticky" aria-label="Mobile Sticky Ad">Mobile Adhesion Ad Unit (320×50) — Zero CLS</div>
   <script src="${JS_PATH}" defer></script>
@@ -186,7 +205,44 @@ function renderThermalSvg(sqft, ceilFt, recBtu, tons) {
 }
 
 function renderAffiliateCards(btu, breaker) {
-  return `<div class="affiliate-grid">
+  const estUnitPrice = btu <= 12000 ? 950 : btu <= 18000 ? 1350 : btu <= 24000 ? 1750 : 2650;
+  return `<div class="action-bar">
+    <button type="button" id="btn-save-zone" class="binder-btn">📌 Save Zone to Binder</button>
+    <button type="button" id="btn-copy-link" class="action-pill">🔗 Copy Shareable Link</button>
+    <button type="button" id="btn-print-sheet" class="action-pill">⎙ Print HVAC Spec Sheet</button>
+  </div>
+
+  <div class="payback-sim" id="payback-simulator" data-btu="${btu}">
+    <h3 style="margin:0 0 6px;font-size:0.96rem">💸 12-Month Utility Bill &amp; ROI Payback Simulator</h3>
+    <p style="margin:0 0 10px;font-size:0.82rem;color:var(--text-muted)">Compare switching from your current heater or AC to a high-efficiency inverter mini-split.</p>
+    <div class="calc-grid" style="margin:0 0 10px">
+      <div class="field"><label for="pay-current">Current Heating / Cooling System</label>
+        <select id="pay-current">
+          <option value="baseboard" selected>Electric Baseboard / Space Heaters (COP 1.0)</option>
+          <option value="window">Window AC Unit (10 CEER) + Space Heater</option>
+          <option value="propane">Propane Garage / Wall Heater ($2.75/gal)</option>
+          <option value="oil">Fuel Oil Boiler / Furnace ($3.80/gal)</option>
+        </select>
+      </div>
+      <div class="field"><label for="pay-install">Est. Mini-Split Installed Cost ($)</label><input id="pay-install" type="number" min="500" max="15000" step="100" value="${estUnitPrice + 450}"></div>
+    </div>
+    <div class="kpi-grid" style="margin:0">
+      <div class="kpi-box"><div class="kpi-label">Est. Annual Savings</div><div class="kpi-val" id="pay-annual">--</div></div>
+      <div class="kpi-box"><div class="kpi-label">5-Year Net Savings</div><div class="kpi-val" id="pay-5yr">--</div></div>
+      <div class="kpi-box"><div class="kpi-label">Break-Even Payback</div><div class="kpi-val" id="pay-years">--</div></div>
+    </div>
+  </div>
+
+  <div class="bom-checklist" id="hvac-bom-checklist">
+    <h3 style="margin:0 0 6px;font-size:0.96rem">🛒 Mini-Split Install &amp; Hardware Checklist (Auto-Saved)</h3>
+    <div class="bom-row" data-bom-id="kit"><input type="checkbox" id="bom-kit"><label for="bom-kit"><strong>${btu.toLocaleString()} BTU 20+ SEER2 Inverter Mini-Split System</strong></label><input class="bom-price-input" type="number" value="${estUnitPrice}"></div>
+    <div class="bom-row" data-bom-id="disc"><input type="checkbox" id="bom-disc"><label for="bom-disc">NEC 440.14 Disconnect Box + ${breaker} Breaker + 6-ft Liquid-Tight Whip</label><input class="bom-price-input" type="number" value="115"></div>
+    <div class="bom-row" data-bom-id="mount"><input type="checkbox" id="bom-mount"><label for="bom-mount">Heavy-Duty Wall Bracket / 18" Snow Riser + Condenser Pad</label><input class="bom-price-input" type="number" value="95"></div>
+    <div class="bom-row" data-bom-id="lineset"><input type="checkbox" id="bom-lineset"><label for="bom-lineset">Line-Set PVC Cover Kit, Nylog Blue, Wall Sleeve &amp; Condensate Drain Line</label><input class="bom-price-input" type="number" value="85"></div>
+    <div class="bom-total-bar"><span id="bom-progress-txt">0 / 4 Checked</span><span>Total: <strong id="bom-grand-total">$0</strong></span></div>
+  </div>
+
+  <div class="affiliate-grid">
     <div class="aff-card"><div><strong>${btu.toLocaleString()} BTU 20+ SEER2 Inverter Kit</strong><p style="font-size:0.84rem;color:var(--text-muted);margin:6px 0">Compare MRCOOL DIY, Pioneer, Senville &amp; Mitsubishi Hyper-Heat units in the ${(btu / 12000).toFixed(2)}-Ton class.</p></div><a class="aff-btn" href="#sizing-table">Compare ${btu / 1000}k BTU Units →</a></div>
     <div class="aff-card"><div><strong>NEC 440.14 Disconnect &amp; Whip Kit</strong><p style="font-size:0.84rem;color:var(--text-muted);margin:6px 0">Matched for ${breaker} circuit with weatherproof non-fused pullout disconnect and 6-ft liquid-tight whip.</p></div><a class="aff-btn" href="#sizing-table">Electrical Specs →</a></div>
     <div class="aff-card"><div><strong>Condenser Wall Bracket / Snow Stand</strong><p style="font-size:0.84rem;color:var(--text-muted);margin:6px 0">Keeps outdoor heat-pump coils 18" above winter snowpack and lawn mower debris.</p></div><a class="aff-btn" href="#sizing-table">Mounting Options →</a></div>
