@@ -73,8 +73,16 @@ function renderLayout({ title, description, canonicalPath, breadcrumbs, jsonLdGr
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <title>${escapeHtml(title)} | ${SITE_NAME}</title>
+  <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeAttr(description)}">
+  <meta name="application-name" content="${SITE_NAME}">
+  <meta property="og:site_name" content="${SITE_NAME}">
+  <meta property="og:title" content="${escapeAttr(title)}">
+  <meta property="og:description" content="${escapeAttr(description)}">
+  <meta property="og:url" content="${canonicalUrl}">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="manifest" href="/manifest.json">
   <link rel="canonical" href="${canonicalUrl}">
   <link rel="expect" href="#hero-panel" blocking="render">
   <link rel="stylesheet" href="${CSS_PATH}">
@@ -354,8 +362,8 @@ for (const s of sqftPages) {
     </section>`;
 
   writePage(`sqft/${s.slug}/index.html`, renderLayout({
-    title: s.title,
-    description: `${s.sqft.toLocaleString()} sq ft mini split sizing (${s.tier}): needs ${s.recommendedBtu.toLocaleString()} BTU (${s.tonnage} Tons), ${s.breaker} breaker, ~$${s.monthlyPeakCost}/mo peak electricity.`,
+    title: `What Size Mini Split for ${s.sqft.toLocaleString()} Sq Ft? [BTU & Breaker Chart]`,
+    description: `Don't oversize your ${s.sqft.toLocaleString()} sq ft ${s.tier} and cause clammy short-cycling! Compare 8ft–14ft ceiling BTU loads, 230V breaker size & monthly kWh cost →`,
     canonicalPath: url,
     breadcrumbs: [{ name: 'Home', url: '/' }, { name: 'Sq Ft Sizing', url: '/#sqft' }, { name: s.shortLabel, url }],
     jsonLdGraph: [
@@ -672,6 +680,8 @@ const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http:
 writePage('sitemap.xml', sitemapXml);
 writePage('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 writePage('ads.txt', `# Replace pub-0000000000000000 with your Google AdSense Publisher ID\ngoogle.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0\n`);
+writePage('favicon.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#0b1220"/><rect x="4" y="4" width="56" height="56" rx="10" fill="none" stroke="#38bdf8" stroke-width="3"/><text x="32" y="42" text-anchor="middle" fill="#38bdf8" font-family="monospace,sans-serif" font-size="22" font-weight="900">BTU</text></svg>`);
+writePage('manifest.json', JSON.stringify({ name: 'MiniSplitBTUMatrix — Room & Garage Mini-Split BTU Sizing Calculator', short_name: 'MiniSplitBTU', start_url: '/', display: 'standalone', background_color: '#0b1220', theme_color: '#0284c7', icons: [{ src: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' }] }, null, 2));
 writePage('_headers', `/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: SAMEORIGIN\n`);
 writePage('_redirects', `/index.html / 301\n`);
 writePage('.assetsignore', `wrangler.jsonc\nsrc/\n`);
